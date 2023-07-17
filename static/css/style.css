@@ -1,0 +1,641 @@
+/* Name Logo Font family */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Navigation Bar Font family */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+/* Inroduction Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+/* Overall font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+/* navigation Bar Start */
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.namelogo{  
+    font-family: 'Pacifico', cursive;
+    font-size: 35px;
+    font-weight: 400;
+}
+.navul{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 50px 0;
+
+}
+.navlist{
+    margin: 0px 15px 0px 15px;
+    list-style: none;
+}
+
+.navlink:hover{
+    color:rgb(3, 255, 3);
+    transform: translateY(-5px);
+    transition: all 0.4s ;
+}
+.chatText{
+    font-size: 20px;
+}
+/* End Navigation Bar  */
+
+/* Introduction part start*/
+.intro{
+    width: 80%;
+    margin: 0 auto 100px auto;
+    padding-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-family: 'Quicksand', sans-serif;
+}
+.satyamImg-sm,.satyamImg-lg{
+    height: 15%;
+    width: 80%;
+    border-radius: 20px;
+}
+.image-sm{
+    display: none;
+}
+.nameContact{
+    margin-top: 5em;
+}
+.nametext{
+    color: rgb(7, 242, 7);
+    font-size: 3.5em;
+    letter-spacing: 4px;
+}
+.profession{
+    margin-top: 15px;
+}
+.uiProgrammertext{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.socialContact{
+    margin-top: 20px ;
+}
+.fa-brands{
+    margin-right: 20px;
+    color: white;
+    font-size: 35px;
+}
+.fa-brands:hover{
+    color: rgb(9, 246, 9);
+    transition: all 0.5s;
+}
+.letschatDiv{
+    margin-top:3em ;
+}
+.chatText{
+    /* color: rgba(255, 255, 0, 0.85); */
+    padding: 13px 20px;
+    border-radius: 5px;
+    background: transparent;
+    text-decoration: none;
+    border: 1px solid green;
+    box-shadow: 0 0 8px green;
+}
+.image-lg{
+    margin-top: 5em;
+}
+/* Introduction part end*/
+
+/* Main Body Start */
+.aboutContainer{
+    background-color: rgba(31, 29, 29, 0.8);
+}
+.aboutSection{
+    width: 80%;
+    margin: 2em auto;
+    padding: 4em 0;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+}
+.innerAboutSection,.innerQuerySection{
+    width: 100%;
+}
+.about,.query{
+    width: 70%;
+    margin: 0 auto;
+}
+.aboutText,.queryText{
+    font-size: 2.5em;
+    font-weight: bolder;
+    line-height: 2em;
+}
+.queryText{
+    font-size: 2em;
+}
+.detail{
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: green;
+}
+.mail-link{
+    font-weight: normal;
+    font-size: 22px;
+}
+.DownloadResume{
+    padding:10px 15px;
+    /* color: rgba(255, 255, 0, 0.687); */
+    border-radius: 5px;
+    font-size: 20px;
+    background: transparent;
+    border: 1px solid green;
+    box-shadow: 0 0 8px green;
+    
+}
+/* Responsive Menu Start */
+@media screen and (max-width:790px){
+    .namelogo{
+        font-size: 28px;
+    }
+    .navul{
+        display: none;
+    }
+    .intro{
+        width: 100%;
+        margin: 0 auto 0 auto;
+    }
+    .satyamImg-lg {
+        width: 60%;
+        border-radius: 20px;
+    }
+    .nametext{
+        font-size: 2em;
+    }
+    .uiProgrammertext{
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .fa-brands{
+        margin-right: 15px;
+        font-size: 28px;
+    }
+    .chatText{
+        padding: 8px 10px;
+        font-size: 18px;
+    }
+    .nameContact,.image-lg{
+        width: 50%;
+    }
+    .aboutSection{
+        flex-direction: column;
+    }
+    .innerAboutSection,.innerQuerySection{
+        margin: 15px 0;
+    }
+    .about,.query{
+        width: 100%;
+        padding: 10px 0;
+    }
+    .aboutText{
+        font-size: 1.7em;
+    }
+    .queryText{
+        font-size: 1.5em;
+        line-height: 3.5em;
+    }
+    .detail,.mail-link{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .mail-link{
+        font-size: 21px;
+    }
+    .DownloadResume{
+        padding:10px 15px;
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:450px){
+    .navbar{
+        padding-top: 20px;
+    }
+    .namelogo{
+        font-size: 25px;
+    }
+    .nametext{
+        font-size: 1.5em;
+    }
+    .intro{
+        margin-top: 3em;
+        flex-direction: column;
+    }
+    .image-sm{
+        display: block;
+        width: 100%;
+    }
+    .nameContact{
+        width: 100%;
+    }
+    .image-lg{
+        display: none;
+    }
+    .satyamImg-sm{
+        height: 10%;
+        width: 60%;
+    }
+    .letschatDiv{
+        margin-top:1.5em ;
+    }
+    .aboutSection{
+        width: 100%;
+        flex-direction: column;
+    }
+    .about,.query{
+        margin: 0;
+        padding: 0 3em;
+        width: 100%;
+    }
+    .about{
+        margin-bottom: 2em;
+    }
+    .queryText{
+        line-height: 2.3em;
+    }
+    .mail-link{
+        font-size: 18px;
+    }
+    .DownloadResume{
+        padding:7px 8px;
+        font-size: 14px;
+    }   
+    
+}
+@media screen and (max-width:334px){
+    *{
+        word-break: break-all;
+    }
+    .intro{
+        padding: 0;
+        margin: 0 0 50px 0;
+        /* margin-bottom: 50px; */
+    }
+    .aboutSection{
+        margin: 0px;
+        padding: 0px;
+    }
+    .about,.query{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+ /* Responsive Menu End  */
+
+/*====== Education  Section====== */
+.educationContainer{
+    width: 70%;
+    margin: 40px auto;
+}
+.education{
+    margin-top: 20px;
+    padding-top: 40px;
+}
+.education-text{
+    font-weight: bolder;
+    font-size: 50px;
+    color: yellow;
+}
+.educationBorder{
+    height: 5px;
+    width: 100px;
+    background-color: yellow;
+    margin-bottom: 100px;
+}
+.post-graduation,.tenth,.twelth,.graduation{
+    margin: 0 0 100px 0;
+    padding: 40px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid green;
+    box-shadow: 0 0 40px green;
+    border-radius: 5px;
+}
+.about-pg{
+    width: 40%;
+    padding: 20px 0 20px 20px;
+}
+.year{
+    margin: 20px 0;
+}
+.completion-year{
+    font-size: 30px;
+    color: red;
+    font-weight: bolder;
+}
+.university{
+    margin-bottom: 10px;
+}
+.university-name{
+    font-size: 20px;
+}
+.degree-level,.university-location{
+    font-size: 18px;
+}
+.location{
+    margin: 20px 0;
+}
+.pg_detail{
+    width: 50%;
+    margin: 40px 0;
+}
+.pg_description{
+    padding: 20px 0;
+    font-size: 25px;
+}
+.tenth,.graduation{
+    margin: 0 0 100px auto;   
+}
+
+@media screen and (max-width:768px){
+    .educationContainer{
+        width: 90%;
+    }
+    .education{
+        padding-top: 30px;
+    }
+    .education-text{
+        font-size: 40px;
+    }
+    .educationBorder{
+        height: 3px;
+        margin-bottom: 80px;
+    }
+    .post-graduation,.tenth,.twelth,.graduation{
+        padding: 10px;
+        width: 85%;
+    }
+    .about-pg{
+        width: 50%;
+        padding:0 0 0 5px;
+    }
+    .pg_detail {
+        margin: 20px 0;
+    }
+    .pg_description{
+        padding: 0;
+        font-size: 20px;
+    }
+    .tenth,.graduation{
+        margin: 0 0 100px auto;   
+    }
+    
+}
+@media screen and (max-width:425px) {
+    .post-graduation,.tenth,.twelth,.graduation{
+        padding: 10px;
+        width: 100%;
+        flex-direction: column;
+    }   
+    .about-pg,.pg_detail{
+        width: 100%;
+        text-align: justify;
+    }
+}
+
+/*======End Education Section*/
+
+/*========Project Section======*/
+.Projects-Container{
+    padding: 20px 0;
+    background-color: black;
+}
+.inner-project{
+    width: 70%;
+    margin: 40px auto;
+}
+.project-title{
+    margin: 20px auto 0 auto;
+}
+.project-title-text{
+    font-size: 60px;
+    color: yellow;
+    font-weight: bolder;
+}
+.project-border{
+    margin: 0 0 40px 0;
+    height: 5px;
+    width: 80px;
+    background-color: yellow;
+}
+.inner-conatiner{
+    width: 70%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.first-project,.second-project, .third-project{
+    margin: 0 20px;
+    padding: 30px 20px 10px 20px;
+    text-align: center;
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(255, 0, 0, 0.513);
+}
+
+.devportfolio-image,.arl-image, .portfolio-image{
+    width: 17vw;
+    height: 20vh;
+    border-radius: 5px;
+}
+.project-desc{
+    margin-top: 30px;
+}
+.first-project-name,.second-project-name,.third-project-name{
+    font-size: 30px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+.first-project-element,.second-project-element,.third-project-element{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.project-links{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.source,.website{
+    margin: 0 5px;
+    font-size: 20px;
+}
+.source-link{
+    padding: 10px 10px;
+    border: 1px solid rgb(7, 248, 7);
+    border-radius: 10px;
+}
+.web-link{
+    padding: 10px 30px;
+}
+.source-link:hover, .web-link:hover{
+    box-shadow: 0px 0px 10px rgb(7, 248, 7);
+}
+
+@media screen and (max-width:768px) {
+    .project-title-text{
+        font-size: 45px;
+    }
+    .inner-conatiner{
+        flex-direction: column;
+    }
+    .first-project,.second-project, .third-project{
+        margin:20px 0;
+        padding: 30px 0px 10px 0px;
+    }
+    .devportfolio-image,.arl-image, .portfolio-image{
+        width: 40vw;
+    }
+    .first-project-name,.second-project-name,.third-project-name{
+        font-size: 25px;
+        font-weight: bolder;
+    }
+}
+
+@media screen and (max-width:490px) {
+    .project-title-text{
+        font-size: 35px;
+    }
+    .project-links{
+        flex-wrap: wrap;
+    }   
+    .source,.website{
+        margin: 20px 15px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:270px) {
+    *{
+        word-break: break-all;
+    }
+    .devportfolio-image,.arl-image, .portfolio-image{
+        width: 30vw;
+    }
+}
+/*========End Project Section====*/
+/*====== Skill Section ======*/
+
+.top-skill-conatiner{
+    margin: 20px auto;
+    padding: 20px 0;
+    width: 70%;
+}
+
+.skill > span{
+    color: yellow;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.skill-border{
+    height: 5px;
+    width: 60px;
+    background-color: yellow;
+}
+.bottom-skill-container{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 40px auto;
+}
+.language{
+    margin: 10px 0;
+    padding: 20px 200px;
+    text-align: center;
+    border: 1px solid rgb(1, 155, 1);
+    box-shadow: 0 0 8px rgba(2, 178, 2, 0.633);
+    cursor: pointer;
+}
+.language:hover{
+    box-shadow: 0 0 8px rgb(4, 245, 4);
+}
+@media screen and (max-width:768px) {
+    .skill > span{
+        font-size: 45px;
+    }
+    .language{
+    padding: 15px 70px;
+    }
+}
+@media screen and (max-width:425px) {
+    .skill > span{
+        font-size: 35px;
+    }
+    .bottom-skill-container{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .right-skill-container > div{
+        padding: 15px 85px;
+    }
+
+}
+@media screen and (max-width:158px) {
+    .language{
+        margin: 0;
+        padding: 0;
+    }
+    .right-skill-container > div{
+        padding: 0 15px;
+    }
+}
+/*=======End Skill Section====*/
+
+/*========== Footer Section===== */
+.Connection-footer{
+    margin: 80px 0 0 0;
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+}
+.stay-connect{
+    padding: 40px 0 20px 0;
+}
+.d-by-s,.address,.num{
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+}
+@media screen and (max-width:425px) {
+    .Connection-footer{
+        font-size: 23px;
+    }
+    .d-by-s,.address,.num{
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+/*=========End Footer Section =======*/
