@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-s_w=qq@by5xzm_rl-xhkb@bqo*-jlq!%)s)3*+0j2xs1evqsgd
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['satyamdev88.pythonanywhere.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'Portfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR,"Portfolio/templates"],
+        'DIRS': [BASE_DIR,"templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -125,5 +125,5 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STATICFILES_DIRS = [
-    BASE_DIR,"Portfolio/static",
+    BASE_DIR,"static",
 ]
